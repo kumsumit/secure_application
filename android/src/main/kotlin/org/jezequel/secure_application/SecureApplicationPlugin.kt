@@ -68,6 +68,14 @@ class SecureApplicationPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, 
           activity?.window?.clearFlags(LayoutParams.FLAG_SECURE)
           result.success(true)
         }
+        "useLaunchImage" -> {
+          // This is currently not possible on Android, as far as I am aware
+          result.success(true)
+        } 
+        "backgroundColor" -> {
+          // This is currently not possible on Android, as far as I am aware
+          result.success(true)
+        }
         "opacity" -> {
           // Implementation available only on ios
           result.success(true)
