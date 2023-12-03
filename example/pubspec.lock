@@ -67,7 +67,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: e1b938eaf3b1e99e1409d861c8cd41e845e81ce5
+      resolved-ref: cb008728f8cd074baa92c09bce4f18456eacf5ff
       url: "https://github.com/kumsumit/flutter_plugin_android_lifecycle.git"
     source: git
     version: "2.0.17"
