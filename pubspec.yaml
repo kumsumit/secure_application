@@ -2,19 +2,21 @@ name: secure_application
 description: Secure app content visibility when user leave app. It will hide content
   in the app switcher and display a frost barrier above locked content when the user get backs
 version: 3.8.0
+publish_to: none
 homepage: https://github.com/neckaros/secure_application
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=3.0.0"
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.16.0"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  flutter_plugin_android_lifecycle: ^2.0.0
-  rxdart: ^0.27.3
+  flutter_plugin_android_lifecycle:
+    git: https://github.com/kumsumit/flutter_plugin_android_lifecycle.git
+  rxdart: ^0.27.7
 
 dev_dependencies:
   flutter_test:
