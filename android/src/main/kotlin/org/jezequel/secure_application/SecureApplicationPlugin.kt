@@ -58,16 +58,23 @@ class SecureApplicationPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, 
     // not used for now but might be used to add some features in the future
   }
 
- 
   override fun onMethodCall(call: MethodCall, result: Result) {
-    if (call.method == "secure") {
-      activity?.window?.addFlags(LayoutParams.FLAG_SECURE)
-      result.success(true)
-    } else if (call.method == "open") {
-      activity?.window?.clearFlags(LayoutParams.FLAG_SECURE)
-        result.success(true)
-    } else {
-      result.success(true)
+    when (call.method) {
+        "secure" -> {
+          activity?.window?.addFlags(LayoutParams.FLAG_SECURE)
+          result.success(true)
+        }
+        "open" -> {
+          activity?.window?.clearFlags(LayoutParams.FLAG_SECURE)
+          result.success(true)
+        }
+        "opacity" -> {
+          // Implementation available only on ios
+          result.success(true)
+        }
+        else -> {
+          result.notImplemented()
+        }
     }
   }
 
