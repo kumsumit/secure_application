@@ -6,11 +6,11 @@ This plugin allow you to protect your application content from view on demand
 
 <img src="https://raw.githubusercontent.com/neckaros/secure_application/master/example/screenshot/gate_off.jpg" height="400" /> <img src="https://raw.githubusercontent.com/neckaros/secure_application/master/example/screenshot/gate_on.jpg" height="400" /> <img src="https://raw.githubusercontent.com/neckaros/secure_application/master/android_appswitcher.JPG" height="400" /> <img src="https://raw.githubusercontent.com/neckaros/secure_application/master/Gate_ios.jpg" height="400" />
 
-Pluggin in iOS is in swift
+Plugin in iOS is in swift
 
-Pluggin in Android is in Kotlin / AndroidX libraries
+Plugin in Android is in Kotlin / AndroidX libraries
 
-Pluggin is also working for web 
+Plugin is also working for web 
 
 Plugin work for windows (will lock when you minimize the window and lock screen)
 
